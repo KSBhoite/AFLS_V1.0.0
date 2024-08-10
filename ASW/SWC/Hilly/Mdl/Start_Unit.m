@@ -1,0 +1,2 @@
+open HighWay_Condition.slx
+load HighWay_Condition.mat
