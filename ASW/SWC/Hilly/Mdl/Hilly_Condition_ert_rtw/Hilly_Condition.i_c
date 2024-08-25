@@ -1,0 +1,882 @@
+#ifndef __MW_INTERNAL_SLDV_PS_ANALYSIS__
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+unsigned int* __mw_instrum_Hilly_Condition_phits;
+
+#define __MW_INSTRUM_RECORD_HIT_NO_TEST(id) ((void) ++__mw_instrum_Hilly_Condition_phits[id - 1U])
+#define __MW_INSTRUM_RECORD_HIT(id) (__mw_instrum_Hilly_Condition_phits ? __MW_INSTRUM_RECORD_HIT_NO_TEST(id) : (void) 0)
+
+static unsigned int *__mw_instrum_Hilly_Condition_ptruth_tables;
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+unsigned int *__MW_INSTRUM_Hilly_Condition_INIT_FILE(unsigned int decCovId);
+
+#define __MW_INSTRUM_TRUTH_TABLE_OFFSET_7 0U
+#define __MW_INSTRUM_RECORD_COMBINATION_HIT_7() \
+  (++__mw_instrum_Hilly_Condition_ptruth_tables[__MW_INSTRUM_TRUTH_TABLE_OFFSET_7 + __mw_instrum_Hilly_Condition_curr_combination_idx_7])
+
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_11(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(11U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 = 4), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(12U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 = 0), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_11(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(11U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 = 4), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(12U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 = 0), 0) : 0))
+#endif
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_16(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(16U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 += 1), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(17U), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_16(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(16U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 += 1), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(17U), 0) : 0))
+#endif
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_23(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(23U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 += 2), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(24U), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_23(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(23U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 += 2), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(24U), 0) : 0))
+#endif
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_28(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(28U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 += 1), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(29U), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_28(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(28U), (__mw_instrum_Hilly_Condition_curr_combination_idx_7 += 1), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(29U), 0) : 0))
+#endif
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_7(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(7U), __MW_INSTRUM_RECORD_COMBINATION_HIT_7(), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(8U), __MW_INSTRUM_RECORD_COMBINATION_HIT_7(), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_7(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(7U), __MW_INSTRUM_RECORD_COMBINATION_HIT_7(), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(8U), __MW_INSTRUM_RECORD_COMBINATION_HIT_7(), 0) : 0))
+#endif
+
+#define __MW_INSTRUM_TRUTH_TABLE_OFFSET_43 7U
+#define __MW_INSTRUM_RECORD_COMBINATION_HIT_43() \
+  (++__mw_instrum_Hilly_Condition_ptruth_tables[__MW_INSTRUM_TRUTH_TABLE_OFFSET_43 + __mw_instrum_Hilly_Condition_curr_combination_idx_43])
+
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_45(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(45U), (__mw_instrum_Hilly_Condition_curr_combination_idx_43 = 1), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(46U), (__mw_instrum_Hilly_Condition_curr_combination_idx_43 = 0), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_45(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(45U), (__mw_instrum_Hilly_Condition_curr_combination_idx_43 = 1), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(46U), (__mw_instrum_Hilly_Condition_curr_combination_idx_43 = 0), 0) : 0))
+#endif
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_50(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(50U), (__mw_instrum_Hilly_Condition_curr_combination_idx_43 += 1), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(51U), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_50(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(50U), (__mw_instrum_Hilly_Condition_curr_combination_idx_43 += 1), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(51U), 0) : 0))
+#endif
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_43(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(43U), __MW_INSTRUM_RECORD_COMBINATION_HIT_43(), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(44U), __MW_INSTRUM_RECORD_COMBINATION_HIT_43(), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_43(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(43U), __MW_INSTRUM_RECORD_COMBINATION_HIT_43(), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(44U), __MW_INSTRUM_RECORD_COMBINATION_HIT_43(), 0) : 0))
+#endif
+
+#define __MW_INSTRUM_TRUTH_TABLE_OFFSET_60 10U
+#define __MW_INSTRUM_RECORD_COMBINATION_HIT_60() \
+  (++__mw_instrum_Hilly_Condition_ptruth_tables[__MW_INSTRUM_TRUTH_TABLE_OFFSET_60 + __mw_instrum_Hilly_Condition_curr_combination_idx_60])
+
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_64(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(64U), (__mw_instrum_Hilly_Condition_curr_combination_idx_60 = 1), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(65U), (__mw_instrum_Hilly_Condition_curr_combination_idx_60 = 0), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_64(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(64U), (__mw_instrum_Hilly_Condition_curr_combination_idx_60 = 1), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(65U), (__mw_instrum_Hilly_Condition_curr_combination_idx_60 = 0), 0) : 0))
+#endif
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_69(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(69U), (__mw_instrum_Hilly_Condition_curr_combination_idx_60 += 1), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(70U), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_69(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(69U), (__mw_instrum_Hilly_Condition_curr_combination_idx_60 += 1), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(70U), 0) : 0))
+#endif
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_74(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(74U), (__mw_instrum_Hilly_Condition_curr_combination_idx_60 += 1), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(75U), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_74(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(74U), (__mw_instrum_Hilly_Condition_curr_combination_idx_60 += 1), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(75U), 0) : 0))
+#endif
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_60(...) \
+  ((__VA_ARGS__) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(60U), __MW_INSTRUM_RECORD_COMBINATION_HIT_60(), (1 == 1)) : (1 == 1)) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(61U), __MW_INSTRUM_RECORD_COMBINATION_HIT_60(), (0 == 1)) : (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_60(expr) \
+  ((expr) ? \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(60U), __MW_INSTRUM_RECORD_COMBINATION_HIT_60(), 1) : 1) : \
+   ((__mw_instrum_Hilly_Condition_ptruth_tables != (unsigned int *) 0xFFFFFFFFFFFFFFFFU) ? (__MW_INSTRUM_RECORD_HIT_NO_TEST(61U), __MW_INSTRUM_RECORD_COMBINATION_HIT_60(), 0) : 0))
+#endif
+
+
+#define __MW_INSTRUM_FCN_ENTER_1() \
+  unsigned int __mw_instrum_Hilly_Condition_curr_combination_idx_7 = 0; \
+  unsigned int __mw_instrum_Hilly_Condition_curr_combination_idx_43 = 0; \
+  unsigned int __mw_instrum_Hilly_Condition_curr_combination_idx_60 = 0; 
+#define __MW_INSTRUM_FCN_ENTER_2() 
+#define __MW_INSTRUM_FCN_ENTER_3() 
+
+#define __MW_INSTRUM_NODE_1() \
+  ((__mw_instrum_Hilly_Condition_ptruth_tables ? \
+    ((void) 0) : \
+    ((void) (__mw_instrum_Hilly_Condition_ptruth_tables = __MW_INSTRUM_Hilly_Condition_INIT_FILE(7)))), \
+   __MW_INSTRUM_RECORD_HIT(1U))
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_2(...) ((__VA_ARGS__) ? (__MW_INSTRUM_RECORD_HIT(2U), (1 == 1)) : (__MW_INSTRUM_RECORD_HIT(3U), (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_2(expr) ((expr) ? (__MW_INSTRUM_RECORD_HIT(2U), 1) : (__MW_INSTRUM_RECORD_HIT(3U), 0))
+#endif
+#define __MW_INSTRUM_NODE_4(lhs, rhs) ((void) 0)
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_9(...) ((__VA_ARGS__) ? (__MW_INSTRUM_RECORD_HIT(9U), (1 == 1)) : (__MW_INSTRUM_RECORD_HIT(10U), (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_9(expr) ((expr) ? (__MW_INSTRUM_RECORD_HIT(9U), 1) : (__MW_INSTRUM_RECORD_HIT(10U), 0))
+#endif
+#define __MW_INSTRUM_NODE_13(lhs, rhs) ((void) 0)
+#define __MW_INSTRUM_NODE_18(lhs, rhs) ((void) 0)
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_21(...) ((__VA_ARGS__) ? (__MW_INSTRUM_RECORD_HIT(21U), (1 == 1)) : (__MW_INSTRUM_RECORD_HIT(22U), (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_21(expr) ((expr) ? (__MW_INSTRUM_RECORD_HIT(21U), 1) : (__MW_INSTRUM_RECORD_HIT(22U), 0))
+#endif
+#define __MW_INSTRUM_NODE_25(lhs, rhs) ((void) 0)
+#define __MW_INSTRUM_NODE_30(lhs, rhs) ((void) 0)
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_33(...) ((__VA_ARGS__) ? (__MW_INSTRUM_RECORD_HIT(33U), (1 == 1)) : (__MW_INSTRUM_RECORD_HIT(34U), (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_33(expr) ((expr) ? (__MW_INSTRUM_RECORD_HIT(33U), 1) : (__MW_INSTRUM_RECORD_HIT(34U), 0))
+#endif
+#define __MW_INSTRUM_NODE_35(lhs, rhs) ((void) 0)
+#define __MW_INSTRUM_NODE_34() \
+  (__MW_INSTRUM_RECORD_HIT(34U))
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_38(...) ((__VA_ARGS__) ? (__MW_INSTRUM_RECORD_HIT(38U), (1 == 1)) : (__MW_INSTRUM_RECORD_HIT(39U), (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_38(expr) ((expr) ? (__MW_INSTRUM_RECORD_HIT(38U), 1) : (__MW_INSTRUM_RECORD_HIT(39U), 0))
+#endif
+#define __MW_INSTRUM_NODE_40(lhs, rhs) ((void) 0)
+#define __MW_INSTRUM_NODE_39() \
+  (__MW_INSTRUM_RECORD_HIT(39U))
+#define __MW_INSTRUM_NODE_47(lhs, rhs) ((void) 0)
+#define __MW_INSTRUM_NODE_52(lhs, rhs) ((void) 0)
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_55(...) ((__VA_ARGS__) ? (__MW_INSTRUM_RECORD_HIT(55U), (1 == 1)) : (__MW_INSTRUM_RECORD_HIT(56U), (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_55(expr) ((expr) ? (__MW_INSTRUM_RECORD_HIT(55U), 1) : (__MW_INSTRUM_RECORD_HIT(56U), 0))
+#endif
+#define __MW_INSTRUM_NODE_57(lhs, rhs) ((void) 0)
+#define __MW_INSTRUM_NODE_44() \
+  (__MW_INSTRUM_RECORD_HIT(44U))
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_62(...) ((__VA_ARGS__) ? (__MW_INSTRUM_RECORD_HIT(62U), (1 == 1)) : (__MW_INSTRUM_RECORD_HIT(63U), (0 == 1)))
+#else
+#define __MW_INSTRUM_NODE_62(expr) ((expr) ? (__MW_INSTRUM_RECORD_HIT(62U), 1) : (__MW_INSTRUM_RECORD_HIT(63U), 0))
+#endif
+#define __MW_INSTRUM_NODE_66(lhs, rhs) ((void) 0)
+#define __MW_INSTRUM_NODE_71(lhs, rhs) ((void) 0)
+#define __MW_INSTRUM_NODE_76(lhs, rhs) ((void) 0)
+#define __MW_INSTRUM_NODE_79() \
+  (__MW_INSTRUM_RECORD_HIT(79U))
+#define __MW_INSTRUM_NODE_80() \
+  ((__mw_instrum_Hilly_Condition_ptruth_tables ? \
+    ((void) 0) : \
+    ((void) (__mw_instrum_Hilly_Condition_ptruth_tables = __MW_INSTRUM_Hilly_Condition_INIT_FILE(7)))), \
+   __MW_INSTRUM_RECORD_HIT(80U))
+#define __MW_INSTRUM_NODE_81() \
+  (__MW_INSTRUM_RECORD_HIT(81U))
+#define __MW_INSTRUM_NODE_82() \
+  ((__mw_instrum_Hilly_Condition_ptruth_tables ? \
+    ((void) 0) : \
+    ((void) (__mw_instrum_Hilly_Condition_ptruth_tables = __MW_INSTRUM_Hilly_Condition_INIT_FILE(7)))), \
+   __MW_INSTRUM_RECORD_HIT(82U))
+#define __MW_INSTRUM_NODE_83() \
+  (__MW_INSTRUM_RECORD_HIT(83U))
+
+#else /* __MW_INTERNAL_SLDV_PS_ANALYSIS__ */
+#ifdef __MW_INTERNAL_SLDV_PS_IGNORE_VOLATILE__
+#define volatile
+#endif /* __MW_INTERNAL_SLDV_PS_IGNORE_VOLATILE__ */
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_11CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_11(...) (__MW_INSTRUM_RECORD_HIT_11CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_11(exp) (__MW_INSTRUM_RECORD_HIT_11CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_16CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_16(...) (__MW_INSTRUM_RECORD_HIT_16CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_16(exp) (__MW_INSTRUM_RECORD_HIT_16CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_23CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_23(...) (__MW_INSTRUM_RECORD_HIT_23CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_23(exp) (__MW_INSTRUM_RECORD_HIT_23CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_28CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_28(...) (__MW_INSTRUM_RECORD_HIT_28CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_28(exp) (__MW_INSTRUM_RECORD_HIT_28CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_7DAO_11_16O_23_28Z_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_7(...) (__MW_INSTRUM_RECORD_HIT_7DAO_11_16O_23_28Z_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_7(exp) (__MW_INSTRUM_RECORD_HIT_7DAO_11_16O_23_28Z_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_45CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_45(...) (__MW_INSTRUM_RECORD_HIT_45CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_45(exp) (__MW_INSTRUM_RECORD_HIT_45CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_50CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_50(...) (__MW_INSTRUM_RECORD_HIT_50CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_50(exp) (__MW_INSTRUM_RECORD_HIT_50CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_43DA_45_50Z_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_43(...) (__MW_INSTRUM_RECORD_HIT_43DA_45_50Z_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_43(exp) (__MW_INSTRUM_RECORD_HIT_43DA_45_50Z_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_64CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_64(...) (__MW_INSTRUM_RECORD_HIT_64CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_64(exp) (__MW_INSTRUM_RECORD_HIT_64CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_69CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_69(...) (__MW_INSTRUM_RECORD_HIT_69CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_69(exp) (__MW_INSTRUM_RECORD_HIT_69CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_74CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_74(...) (__MW_INSTRUM_RECORD_HIT_74CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_74(exp) (__MW_INSTRUM_RECORD_HIT_74CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_60DAA_64_69_74Z_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_60(...) (__MW_INSTRUM_RECORD_HIT_60DAA_64_69_74Z_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_60(exp) (__MW_INSTRUM_RECORD_HIT_60DAA_64_69_74Z_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+
+#define __MW_INSTRUM_FCN_ENTER_1() 
+
+#define __MW_INSTRUM_FCN_ENTER_2() 
+
+#define __MW_INSTRUM_FCN_ENTER_3() 
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_1EZ_Hilly__Condition_0020_0028SIL_0029(void) { }
+#define __MW_INSTRUM_NODE_1() __MW_INSTRUM_RECORD_HIT_1EZ_Hilly__Condition_0020_0028SIL_0029()
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_2CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_2(...) (__MW_INSTRUM_RECORD_HIT_2CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_2(exp) (__MW_INSTRUM_RECORD_HIT_2CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_4IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_4(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_9CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_9(...) (__MW_INSTRUM_RECORD_HIT_9CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_9(exp) (__MW_INSTRUM_RECORD_HIT_9CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_13IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_13(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_18IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_18(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_21CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_21(...) (__MW_INSTRUM_RECORD_HIT_21CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_21(exp) (__MW_INSTRUM_RECORD_HIT_21CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_25IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_25(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_30IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_30(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_33DZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_33(...) (__MW_INSTRUM_RECORD_HIT_33DZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_33(exp) (__MW_INSTRUM_RECORD_HIT_33DZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_35IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_35(lhs, rhs)(void)0
+
+#define __MW_INSTRUM_NODE_34() ((void)0)
+
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_38DZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_38(...) (__MW_INSTRUM_RECORD_HIT_38DZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_38(exp) (__MW_INSTRUM_RECORD_HIT_38DZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_40IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_40(lhs, rhs)(void)0
+
+#define __MW_INSTRUM_NODE_39() ((void)0)
+
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_47IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_47(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_52IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_52(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_55CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_55(...) (__MW_INSTRUM_RECORD_HIT_55CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_55(exp) (__MW_INSTRUM_RECORD_HIT_55CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_57IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_57(lhs, rhs)(void)0
+
+#define __MW_INSTRUM_NODE_44() ((void)0)
+
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+int __MW_INSTRUM_RECORD_HIT_62CZ_Hilly__Condition_0020_0028SIL_0029(int condValue) { return condValue; }
+#ifdef __cplusplus
+#define __MW_INSTRUM_NODE_62(...) (__MW_INSTRUM_RECORD_HIT_62CZ_Hilly__Condition_0020_0028SIL_0029(__VA_ARGS__))
+#else
+#define __MW_INSTRUM_NODE_62(exp) (__MW_INSTRUM_RECORD_HIT_62CZ_Hilly__Condition_0020_0028SIL_0029(exp))
+#endif
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_66IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_66(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_71IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_71(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_76IZ_Hilly__Condition_0020_0028SIL_0029(int out1, int out2, int out3) { }
+#define __MW_INSTRUM_NODE_76(lhs, rhs)(void)0
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_79XZ_Hilly__Condition_0020_0028SIL_0029(void) { }
+#define __MW_INSTRUM_NODE_79() __MW_INSTRUM_RECORD_HIT_79XZ_Hilly__Condition_0020_0028SIL_0029()
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_80EZ_Hilly__Condition_0020_0028SIL_0029(void) { }
+#define __MW_INSTRUM_NODE_80() __MW_INSTRUM_RECORD_HIT_80EZ_Hilly__Condition_0020_0028SIL_0029()
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_81XZ_Hilly__Condition_0020_0028SIL_0029(void) { }
+#define __MW_INSTRUM_NODE_81() __MW_INSTRUM_RECORD_HIT_81XZ_Hilly__Condition_0020_0028SIL_0029()
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_82EZ_Hilly__Condition_0020_0028SIL_0029(void) { }
+#define __MW_INSTRUM_NODE_82() __MW_INSTRUM_RECORD_HIT_82EZ_Hilly__Condition_0020_0028SIL_0029()
+
+#ifdef __cplusplus
+extern "C"
+#else
+extern
+#endif
+void __MW_INSTRUM_RECORD_HIT_83XZ_Hilly__Condition_0020_0028SIL_0029(void) { }
+#define __MW_INSTRUM_NODE_83() __MW_INSTRUM_RECORD_HIT_83XZ_Hilly__Condition_0020_0028SIL_0029()
+
+#endif /* __MW_INTERNAL_SLDV_PS_ANALYSIS__ */
+
+# 1 "C:\\Adaptive_Front_Light_System_V1.0.0\\AFLS_V1.0.0\\ASW\\SWC\\Hilly\\Mdl\\Hilly_Condition_ert_rtw\\Hilly_Condition.c"
+# 16 "C:\\Adaptive_Front_Light_System_V1.0.0\\AFLS_V1.0.0\\ASW\\SWC\\Hilly\\Mdl\\Hilly_Condition_ert_rtw\\Hilly_Condition.h"
+#ifndef RTW_HEADER_Hilly_Condition_h_
+#define RTW_HEADER_Hilly_Condition_h_
+#ifndef Hilly_Condition_COMMON_INCLUDES_
+#define Hilly_Condition_COMMON_INCLUDES_
+# 16 "C:\\Adaptive_Front_Light_System_V1.0.0\\AFLS_V1.0.0\\ASW\\SWC\\Hilly\\Mdl\\Hilly_Condition_ert_rtw\\rtwtypes.h"
+#ifndef RTWTYPES_H
+#define RTWTYPES_H
+
+
+
+#ifndef false
+#define false (0U)
+#endif /* false */
+
+#ifndef true
+#define true (1U)
+#endif /* true */
+# 47
+typedef signed char int8_T; 
+typedef unsigned char uint8_T; 
+typedef short int16_T; 
+typedef unsigned short uint16_T; 
+typedef int int32_T; 
+typedef unsigned uint32_T; 
+typedef float real32_T; 
+typedef double real64_T; 
+# 60
+typedef double real_T; 
+typedef double time_T; 
+typedef unsigned char boolean_T; 
+typedef int int_T; 
+typedef unsigned uint_T; 
+typedef unsigned long ulong_T; 
+typedef char char_T; 
+typedef unsigned char uchar_T; 
+typedef char_T byte_T; 
+# 78
+typedef 
+# 75
+struct { 
+real32_T re; 
+real32_T im; 
+} creal32_T; 
+
+
+
+
+typedef 
+# 80
+struct { 
+real64_T re; 
+real64_T im; 
+} creal64_T; 
+
+
+
+
+typedef 
+# 85
+struct { 
+real_T re; 
+real_T im; 
+} creal_T; 
+# 95
+typedef 
+# 92
+struct { 
+int8_T re; 
+int8_T im; 
+} cint8_T; 
+# 102
+typedef 
+# 99
+struct { 
+uint8_T re; 
+uint8_T im; 
+} cuint8_T; 
+# 109
+typedef 
+# 106
+struct { 
+int16_T re; 
+int16_T im; 
+} cint16_T; 
+# 116
+typedef 
+# 113
+struct { 
+uint16_T re; 
+uint16_T im; 
+} cuint16_T; 
+# 123
+typedef 
+# 120
+struct { 
+int32_T re; 
+int32_T im; 
+} cint32_T; 
+# 130
+typedef 
+# 127
+struct { 
+uint32_T re; 
+uint32_T im; 
+} cuint32_T; 
+# 148
+typedef void *pointer_T; 
+
+#endif /* RTWTYPES_H */
+# 21 "C:\\Adaptive_Front_Light_System_V1.0.0\\AFLS_V1.0.0\\ASW\\SWC\\Hilly\\Mdl\\Hilly_Condition_ert_rtw\\Hilly_Condition.h"
+#endif /* Hilly_Condition_COMMON_INCLUDES_ */
+# 16 "C:\\Adaptive_Front_Light_System_V1.0.0\\AFLS_V1.0.0\\ASW\\SWC\\Hilly\\Mdl\\Hilly_Condition_ert_rtw\\Hilly_Condition_types.h"
+#ifndef RTW_HEADER_Hilly_Condition_types_h_
+#define RTW_HEADER_Hilly_Condition_types_h_
+
+
+
+
+typedef struct tag_RTM_Hilly_Condition_T RT_MODEL_Hilly_Condition_T; 
+
+#endif /* RTW_HEADER_Hilly_Condition_types_h_ */
+# 26 "C:\\Adaptive_Front_Light_System_V1.0.0\\AFLS_V1.0.0\\ASW\\SWC\\Hilly\\Mdl\\Hilly_Condition_ert_rtw\\Hilly_Condition.h"
+#ifndef rtmGetErrorStatus
+#define rtmGetErrorStatus(rtm) ((rtm)->errorStatus)
+#endif /* rtmGetErrorStatus */
+
+#ifndef rtmSetErrorStatus
+#define rtmSetErrorStatus(rtm,val) ((rtm)->errorStatus = (val))
+#endif /* rtmSetErrorStatus */
+# 41
+typedef 
+# 35
+struct { 
+uint8_T S_SlfLuxInt; 
+uint8_T S_LongiDistOppVeh; 
+uint8_T S_LatDistPrlVeh; 
+uint8_T S_SlfVehSpd; 
+int8_T S_SlfVehSteerAng; 
+} ExtU_Hilly_Condition_T; 
+# 47
+typedef 
+# 44
+struct { 
+uint8_T HillyCond_LoHiBeam; 
+int8_T HillyCond_RiLfInd; 
+} ExtY_Hilly_Condition_T; 
+
+
+struct tag_RTM_Hilly_Condition_T { 
+const char_T *volatile errorStatus; 
+}; 
+
+
+extern ExtU_Hilly_Condition_T Hilly_Condition_U; 
+
+
+extern ExtY_Hilly_Condition_T Hilly_Condition_Y; 
+
+
+extern void Hilly_Condition_initialize(void); 
+extern void Hilly_Condition_step(void); 
+extern void Hilly_Condition_terminate(void); 
+
+
+extern RT_MODEL_Hilly_Condition_T *const Hilly_Condition_M; 
+# 111
+#endif /* RTW_HEADER_Hilly_Condition_h_ */
+# 16 "C:\\Adaptive_Front_Light_System_V1.0.0\\AFLS_V1.0.0\\ASW\\SWC\\Hilly\\Mdl\\Hilly_Condition_ert_rtw\\Hilly_Condition_private.h"
+#ifndef RTW_HEADER_Hilly_Condition_private_h_
+#define RTW_HEADER_Hilly_Condition_private_h_
+
+#endif /* RTW_HEADER_Hilly_Condition_private_h_ */
+# 20 "C:\\Adaptive_Front_Light_System_V1.0.0\\AFLS_V1.0.0\\ASW\\SWC\\Hilly\\Mdl\\Hilly_Condition_ert_rtw\\Hilly_Condition.c"
+ExtU_Hilly_Condition_T Hilly_Condition_U; 
+
+
+ExtY_Hilly_Condition_T Hilly_Condition_Y; 
+
+
+static RT_MODEL_Hilly_Condition_T Hilly_Condition_M_; 
+RT_MODEL_Hilly_Condition_T *const Hilly_Condition_M = (&Hilly_Condition_M_); 
+
+
+void Hilly_Condition_step(void) 
+{ int __mw_tmp_for_expr_13; int __mw_tmp_for_expr_12; int __mw_tmp_for_expr_11; int __mw_tmp_for_expr_10; int __mw_tmp_for_expr_9; int __mw_tmp_for_expr_8; int __mw_tmp_for_expr_7; int __mw_tmp_for_expr_6; int __mw_tmp_for_expr_5; int __mw_tmp_for_expr_4; int __mw_tmp_for_expr_3; int __mw_tmp_for_expr_2; int __mw_tmp_for_expr_1; __MW_INSTRUM_FCN_ENTER_1(); __MW_INSTRUM_NODE_1(); { 
+int8_T rtb_HillyCond_LoHi_Oppveh; 
+int8_T rtb_HillyCond_LoHi_Oppveh_0; 
+int8_T rtb_HillyCond_LoHi_Prlveh; 
+# 43
+rtb_HillyCond_LoHi_Oppveh = (int8_T)__MW_INSTRUM_NODE_2(((__mw_tmp_for_expr_1 = Hilly_Condition_U.S_SlfLuxInt), (__MW_INSTRUM_NODE_4(__mw_tmp_for_expr_1, 20), (__mw_tmp_for_expr_1 < 20)))); 
+# 59
+rtb_HillyCond_LoHi_Prlveh = (int8_T)__MW_INSTRUM_NODE_7(__MW_INSTRUM_NODE_9(__MW_INSTRUM_NODE_11(((__mw_tmp_for_expr_2 = Hilly_Condition_U.S_LongiDistOppVeh), (__MW_INSTRUM_NODE_13(__mw_tmp_for_expr_2, 20), (__mw_tmp_for_expr_2 > 20)))) || __MW_INSTRUM_NODE_16(((__mw_tmp_for_expr_3 = Hilly_Condition_U.S_LongiDistOppVeh), (__MW_INSTRUM_NODE_18(__mw_tmp_for_expr_3, 0), (__mw_tmp_for_expr_3 == 0))))) && __MW_INSTRUM_NODE_21(__MW_INSTRUM_NODE_23(((__mw_tmp_for_expr_4 = Hilly_Condition_U.S_LatDistPrlVeh), (__MW_INSTRUM_NODE_25(__mw_tmp_for_expr_4, 7), (__mw_tmp_for_expr_4 > 7)))) || __MW_INSTRUM_NODE_28(((__mw_tmp_for_expr_5 = Hilly_Condition_U.S_LatDistPrlVeh), (__MW_INSTRUM_NODE_30(__mw_tmp_for_expr_5, 0), (__mw_tmp_for_expr_5 == 0)))))); { 
+# 71
+if (__MW_INSTRUM_NODE_33(((__mw_tmp_for_expr_6 = Hilly_Condition_U.S_SlfVehSteerAng), (__MW_INSTRUM_NODE_35(__mw_tmp_for_expr_6, 10), (__mw_tmp_for_expr_6 >= 10))))) { 
+
+
+
+Hilly_Condition_Y.HillyCond_RiLfInd = (1); 
+} else { { if (__MW_INSTRUM_NODE_38(((__mw_tmp_for_expr_7 = Hilly_Condition_U.S_SlfVehSteerAng), (__MW_INSTRUM_NODE_40(__mw_tmp_for_expr_7, -15), (__mw_tmp_for_expr_7 <= (-15)))))) { 
+
+
+
+
+Hilly_Condition_Y.HillyCond_RiLfInd = (-1); 
+} else { 
+
+
+
+
+Hilly_Condition_Y.HillyCond_RiLfInd = (0); 
+}  } }  } { 
+# 101
+if (__MW_INSTRUM_NODE_43(__MW_INSTRUM_NODE_45(((__mw_tmp_for_expr_8 = rtb_HillyCond_LoHi_Oppveh), (__MW_INSTRUM_NODE_47(__mw_tmp_for_expr_8, 0), (__mw_tmp_for_expr_8 != 0)))) && __MW_INSTRUM_NODE_50(((__mw_tmp_for_expr_9 = rtb_HillyCond_LoHi_Prlveh), (__MW_INSTRUM_NODE_52(__mw_tmp_for_expr_9, 0), (__mw_tmp_for_expr_9 != 0)))))) { 
+rtb_HillyCond_LoHi_Oppveh_0 = (int8_T)__MW_INSTRUM_NODE_55(((__mw_tmp_for_expr_10 = Hilly_Condition_U.S_SlfVehSpd), (__MW_INSTRUM_NODE_57(__mw_tmp_for_expr_10, 60), (__mw_tmp_for_expr_10 >= 60)))); 
+} else { 
+rtb_HillyCond_LoHi_Oppveh_0 = (0); 
+}  } 
+# 116
+Hilly_Condition_Y.HillyCond_LoHiBeam = (uint8_T)__MW_INSTRUM_NODE_60(__MW_INSTRUM_NODE_62(__MW_INSTRUM_NODE_64(((__mw_tmp_for_expr_11 = rtb_HillyCond_LoHi_Oppveh), (__MW_INSTRUM_NODE_66(__mw_tmp_for_expr_11, 0), (__mw_tmp_for_expr_11 != 0)))) && __MW_INSTRUM_NODE_69(((__mw_tmp_for_expr_12 = rtb_HillyCond_LoHi_Prlveh), (__MW_INSTRUM_NODE_71(__mw_tmp_for_expr_12, 0), (__mw_tmp_for_expr_12 != 0))))) && __MW_INSTRUM_NODE_74(((__mw_tmp_for_expr_13 = rtb_HillyCond_LoHi_Oppveh_0), (__MW_INSTRUM_NODE_76(__mw_tmp_for_expr_13, 0), (__mw_tmp_for_expr_13 != 0))))); } __MW_INSTRUM_NODE_79(); 
+
+
+
+
+} 
+
+
+void Hilly_Condition_initialize(void) 
+{ __MW_INSTRUM_FCN_ENTER_2(); __MW_INSTRUM_NODE_80(); __MW_INSTRUM_NODE_81(); 
+
+} 
+
+
+void Hilly_Condition_terminate(void) 
+{ __MW_INSTRUM_FCN_ENTER_3(); __MW_INSTRUM_NODE_82(); __MW_INSTRUM_NODE_83(); 
+
+} 

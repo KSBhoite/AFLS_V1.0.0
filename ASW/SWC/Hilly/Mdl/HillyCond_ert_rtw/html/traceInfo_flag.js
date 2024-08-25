@@ -1,0 +1,50 @@
+function TraceInfoFlag() {
+    this.traceFlag = new Array();
+    this.traceFlag["HillyCond.c:43c64"]=1;
+    this.traceFlag["HillyCond.c:59c72"]=1;
+    this.traceFlag["HillyCond.c:59c78"]=1;
+    this.traceFlag["HillyCond.c:60c36"]=1;
+    this.traceFlag["HillyCond.c:60c43"]=1;
+    this.traceFlag["HillyCond.c:60c76"]=1;
+    this.traceFlag["HillyCond.c:60c81"]=1;
+    this.traceFlag["HillyCond.c:61c34"]=1;
+    this.traceFlag["HillyCond.c:70c36"]=1;
+    this.traceFlag["HillyCond.c:75c43"]=1;
+    this.traceFlag["HillyCond.c:75c46"]=1;
+    this.traceFlag["HillyCond.c:80c37"]=1;
+    this.traceFlag["HillyCond.c:100c34"]=1;
+    this.traceFlag["HillyCond.c:100c40"]=1;
+    this.traceFlag["HillyCond.c:100c70"]=1;
+    this.traceFlag["HillyCond.c:101c68"]=1;
+    this.traceFlag["HillyCond.c:115c73"]=1;
+    this.traceFlag["HillyCond.c:115c79"]=1;
+    this.traceFlag["HillyCond.c:116c32"]=1;
+    this.traceFlag["HillyCond.c:116c38"]=1;
+    this.traceFlag["HillyCond.c:116c70"]=1;
+}
+top.TraceInfoFlag.instance = new TraceInfoFlag();
+function TraceInfoLineFlag() {
+    this.lineTraceFlag = new Array();
+    this.lineTraceFlag["HillyCond.c:43"]=1;
+    this.lineTraceFlag["HillyCond.c:59"]=1;
+    this.lineTraceFlag["HillyCond.c:60"]=1;
+    this.lineTraceFlag["HillyCond.c:61"]=1;
+    this.lineTraceFlag["HillyCond.c:70"]=1;
+    this.lineTraceFlag["HillyCond.c:74"]=1;
+    this.lineTraceFlag["HillyCond.c:75"]=1;
+    this.lineTraceFlag["HillyCond.c:80"]=1;
+    this.lineTraceFlag["HillyCond.c:86"]=1;
+    this.lineTraceFlag["HillyCond.c:100"]=1;
+    this.lineTraceFlag["HillyCond.c:101"]=1;
+    this.lineTraceFlag["HillyCond.c:103"]=1;
+    this.lineTraceFlag["HillyCond.c:115"]=1;
+    this.lineTraceFlag["HillyCond.c:116"]=1;
+    this.lineTraceFlag["HillyCond.h:36"]=1;
+    this.lineTraceFlag["HillyCond.h:37"]=1;
+    this.lineTraceFlag["HillyCond.h:38"]=1;
+    this.lineTraceFlag["HillyCond.h:39"]=1;
+    this.lineTraceFlag["HillyCond.h:40"]=1;
+    this.lineTraceFlag["HillyCond.h:45"]=1;
+    this.lineTraceFlag["HillyCond.h:46"]=1;
+}
+top.TraceInfoLineFlag.instance = new TraceInfoLineFlag();
